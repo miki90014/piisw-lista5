@@ -2,9 +2,9 @@
   "books": [
     {
       "id": 1,
-      "title": "Solaris123",
+      "title": "Solaris1234444",
       "author": "Stanisław Lem",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. ",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu enim augue. Vestibulum sed hendrerit nisl. Sed ullamcorper tempor neque. SUPER!!!!",
       "year": 1961
     },
     {
@@ -50,6 +50,13 @@
       "title": "Don't like it",
       "description": "Anything is better than this.",
       "rate": 1
+    },
+    {
+      "id": 4,
+      "forBook": 1,
+      "title": "Nowa recenzja",
+      "description": "Super recenzja ksiązki",
+      "rate": 5
     }
   ]
 }

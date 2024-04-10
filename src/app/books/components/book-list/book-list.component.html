@@ -1,4 +1,5 @@
 <article class="m-3">
+  <a [routerLink]="['../reviews']" class="card-link">All reviews</a>
   <h2>List of all books</h2>
   <section class="d-flex flex-column gap-2">
     @for (book of books; track book.id) {
@@ -9,8 +10,10 @@
           <p class="card-text">
             {{ book.description }}
           </p>
+          <a [routerLink]="[book.id]" class="card-link">Details</a>
           <a [routerLink]="[book.id, 'edit']" class="card-link">Edit</a>
           <a [routerLink]="[book.id, 'reviews']" class="card-link">Reviews</a>
+          <a [routerLink]="[book.id, 'reviews', 'add']" class="card-link">Add review</a>
         </div>
       </div>
     }

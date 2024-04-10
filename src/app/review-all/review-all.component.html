@@ -1,0 +1,17 @@
+<p>review-all works!</p>
+<a [routerLink]="['../books']" class="card-link">List of Books</a>
+<article class="m-3">
+  <h3>Reviews</h3>
+  <section class="d-flex flex-column gap-2">
+    <div *ngFor="let review of reviews" class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ review.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ review.rate }}</h6>
+        <p class="card-text">
+          {{ review.description }}
+        </p>
+        <p> {{review.forBook}}</p>
+      </div>
+    </div>
+  </section>
+</article>
